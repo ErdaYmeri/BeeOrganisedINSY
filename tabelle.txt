@@ -1,0 +1,14 @@
+CREATE TABLE `beeuser` (
+  `idU` int unsigned NOT NULL AUTO_INCREMENT,
+  `vname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `fname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `usrname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `passwort` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `gebtag` date COLLATE utf8_unicode_ci NOT NULL,
+  `aktiv` boolean COLLATE utf8_unicode_ci NOT NULL,
+  `level` boolean COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`idU`), UNIQUE (`email`,`usrname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
